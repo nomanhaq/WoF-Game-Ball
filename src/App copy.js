@@ -173,7 +173,7 @@ function App() {
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! `
+          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -360,8 +360,17 @@ function App() {
                       {feedback}
                     </s.TextDescription>
                     <s.SpacerMedium />
-                    
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                      <StyledRoundButton
+                        style={{ lineHeight: 0.4 }}
+                        disabled={claimingNft ? 1 : 0}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          decrementMintAmount();
+                        }}
+                      >
+                        -
+                      </StyledRoundButton>
                       <s.SpacerMedium />
                       <s.TextDescription
                         style={{
@@ -372,7 +381,15 @@ function App() {
                         {mintAmount}
                       </s.TextDescription>
                       <s.SpacerMedium />
-
+                      <StyledRoundButton
+                        disabled={claimingNft ? 1 : 0}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          incrementMintAmount();
+                        }}
+                      >
+                        +
+                      </StyledRoundButton>
                     </s.Container>
                     <s.SpacerSmall />
                     <div className="styleBtnContainer">
@@ -384,9 +401,13 @@ function App() {
                           getData();
                         }}
                       >
-                        {claimingNft ? "BUSY" : "MINT"}
+                        {claimingNft ? "BUSY" : "BUY"}
                       </StyledButton>
-                      
+                      <StyledLink2
+                        target={"_blank"} href={CONFIG.MARKETPLACE_LINK+blockchain.account}
+                      >
+                        Opensea
+                      </StyledLink2>
                     </div>
                   </>
                 )}
