@@ -1,11 +1,11 @@
 
 {
-  "CONTRACT_ADDRESS": "0xEc1bE3C2FB3eB25b3AC3A2A12aC4e5e92f414a79",
-  "SCAN_LINK": "https://etherscan.io/address/0xEc1bE3C2FB3eB25b3AC3A2A12aC4e5e92f414a79",
+  "CONTRACT_ADDRESS": "0x304089C41F93Ac7f26729Dd825E65E3F5505Be41",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/address/0x304089C41F93Ac7f26729Dd825E65E3F5505Be41",
   "NETWORK": {
-    "NAME": "Ethereum Mainnet",
+    "NAME": "Rinkeby Testnet",
     "SYMBOL": "ETH",
-    "ID": 1
+    "ID": 4
   },
   "NFT_NAME": "WoF Game Ball NFT",
   "SYMBOL": "WoFGB",
@@ -14,6 +14,6 @@
   "DISPLAY_COST": 0,
   "GAS_LIMIT": 485000,
   "MARKETPLACE": "Opeansea",
-  "MARKETPLACE_LINK": "https://opensea.io/",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/",
   "SHOW_BACKGROUND": true
 }

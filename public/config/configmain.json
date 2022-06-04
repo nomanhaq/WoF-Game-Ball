@@ -1,0 +1,19 @@
+
+{
+  "CONTRACT_ADDRESS": "0xEc1bE3C2FB3eB25b3AC3A2A12aC4e5e92f414a79",
+  "SCAN_LINK": "https://etherscan.io/address/0xEc1bE3C2FB3eB25b3AC3A2A12aC4e5e92f414a79",
+  "NETWORK": {
+    "NAME": "Ethereum Mainnet",
+    "SYMBOL": "ETH",
+    "ID": 1
+  },
+  "NFT_NAME": "WoF Game Ball NFT",
+  "SYMBOL": "WoFGB",
+  "MAX_SUPPLY": 444,
+  "WEI_COST": 0,
+  "DISPLAY_COST": 0,
+  "GAS_LIMIT": 485000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/",
+  "SHOW_BACKGROUND": true
+}
